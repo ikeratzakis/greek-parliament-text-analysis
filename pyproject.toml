@@ -1,0 +1,27 @@
+[project]
+name = "ikera-greek-parliament-text-analysis"
+version = "0.1.0"
+description = "Tools for processing and analyzing parliamentary speeches in Greece based on a data.gov.gr dataset"
+readme="README.md"
+license = {file = "LICENSE"}
+authors = [{"name" = "Ioannis Keratzakis"}]
+keywords = ["nlp", "text analysis", "data science", "semantic search", "greek"]
+requires-python = ">=3.12"
+
+dependencies = [
+    "nltk==3.9.1",
+    "polars==1.30.0",
+    "orjson==3.10.18",
+    "spacy==3.8.7",
+    "pyLDAvis==3.4.1",
+    "elasticsearch==9.0.2",
+    "tqdm==4.67.1",
+    "gensim==4.3.3",
+    "sentence-transformers==4.1.0",
+    "streamlit==1.45.1",
+    "meilisearch==0.34.1"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
